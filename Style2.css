@@ -1,0 +1,23 @@
+#current_date {
+	position: absolute;
+	left: 1000px;
+	top: 850px;
+}
+
+#bottom {
+	position: absolute;
+	left: 50px;
+	top: 850px;
+}
+
+#about_me {
+	position: absolute;
+	left: 350px;
+	top: 200px;
+	color: #FA8072;
+	border: solid grey;
+	 font: bold 1rem sans-serif;
+	 margin: 2rem;
+	 padding: 1rem;
+}
+

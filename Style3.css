@@ -1,0 +1,11 @@
+#bottom {
+	position: absolute;
+	left: 50px;
+	top: 850px;
+}
+
+#current_date {
+	position: absolute;
+	left: 1000px;
+	top: 850px;
+}

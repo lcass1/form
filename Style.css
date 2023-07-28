@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #fb0066;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+
+#bottom {
+	position: absolute;
+	left: 50px;
+	top: 850px;
+}
+
+#current_date {
+	position: absolute;
+	left: 1000px;
+	top: 850px;
+}
+
+
+
+.popup {
+	position: relative;
+	left: 200px;
+	top: 150px;
+	color: red;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+
+.popup2 {
+	background: white;
+	width: 420px;
+	padding: 30px 40px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	border-radius: 8px;
+	font-family: sans-serif;
+	text-align: center;
+	display: none;
+}
+
+button {
+	display: block;
+	margin: 0 0 20px auto;
+	background: transparent;
+	font-size: 30px;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #03549a;
+	color: white;
+}
+
+.popup2 h2 {
+	margin-top: -20px;
+}
+
+.popup2 p {
+	font-size: 14px;
+	text-align: justify;
+	margin: 20px 0;
+	line-height: 25px;
+}
+
